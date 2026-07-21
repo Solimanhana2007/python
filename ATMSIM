@@ -1,0 +1,29 @@
+balance = 1000
+
+while True:
+    print("1. Check Balance")
+    print("2. Deposit")
+    print("3. Withdraw")
+    print("4. Exit")
+
+    choice = int(input("choose: "))
+
+    if choice == 1:
+        print(f"Your Balance is {balance}")
+        break 
+    elif choice == 2:
+        amount = int(input("Enter Amount to Deposit: "))
+        balance += amount
+        print(f"Your Updated Balance is {balance}")
+        break
+    elif choice == 3:
+        amount = int(input("Enter Amount to Withdraw: "))
+        if amount <= balance:
+            balance -= amount
+            print(f"Your Updated Balance is {balance}")
+        break
+    elif choice == 4:
+        print("Thank You for Using ATM")
+        break
+    else:
+        print("Invalid Choice")
