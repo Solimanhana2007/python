@@ -1,8 +1,21 @@
-Name = (input("Enter your name:" ))
+from operator import ge
+
+
+Name = input("Enter your name:" )
 Age = int(input("Enter Your Age:"))
-Unv= (input("Enter Your UNV. Name: "))
-print("\n----- Student Card -----")
-print(f"Name:{Name}")
-print(f"Age:{Age}")
-print(f"UNV:{Unv}")
-print("------------------------")
+
+if Age >= 18:
+   Unv= (input("Enter Your UNV Name: "))
+   print("\n----- Student Card -----")
+   print(f"Name:{Name}")
+   print(f"Age:{Age}")
+   print(f"UNV:{Unv}")
+
+elif Age < 18:
+  school= input("Enter Your school  Name: ")
+  print("\n----- Student Card -----")
+  print(f"Name:{Name}")
+  print(f"Age:{Age}")
+  print(f"School:{school}")
+else : 
+  print ("Err&")
