@@ -1,0 +1,8 @@
+Name = (input("Enter your name:" ))
+Age = int(input("Enter Your Age:"))
+Unv= (input("Enter Your UNV. Name: "))
+print("\n----- Student Card -----")
+print(f"Name:{Name}")
+print(f"Age:{Age}")
+print(f"UNV:{Unv}")
+print("------------------------")
