@@ -1,0 +1,15 @@
+students = []
+print("-----Student Mangment System-----")
+name  = input("Enter student name:")
+age   =  input("Enter student age:")
+grade =  input("Enter student grade:")
+Id    =  input("Enter student ID:")
+student = {
+    "Name":  name,
+    "Age":   age,
+    "Grade": grade,
+    "ID":    Id
+          }
+
+students.append(student)
+print(students)
